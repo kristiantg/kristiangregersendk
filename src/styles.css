@@ -69,7 +69,6 @@ body::-webkit-scrollbar-thumb {
 .nav-link:hover {
   filter: opacity(0.7);
   color: var(--text-secondary);
-  animation: bounce;
   animation-duration: 1s;
 }
 
