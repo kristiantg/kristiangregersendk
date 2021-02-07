@@ -1,0 +1,25 @@
+main {
+  position: absolute;
+  margin-left: 10rem;
+  margin-top: 20rem;
+  padding: 1rem;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: monospace, monospace;
+}
+
+.hometext {
+  position: absolute;
+  font-size: 50px;
+  width: 3px;
+  --animate-delay: 1s;
+}
+
+.hometext:hover {
+  animation: bounce;
+  animation-duration: 1s;
+  --animate-delay: 1s;
+}

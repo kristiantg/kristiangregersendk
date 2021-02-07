@@ -1,0 +1,156 @@
+:root {
+  font-size: 16px;
+  font-family: "Archivo Narrow";
+  --text-primary: #1b998b;
+  --text-secondary: #e84855;
+  --bg-primary: #181818;
+  --bg-secondary: #070707;
+  --transition-speed: 600ms;
+}
+
+img {
+  max-width: 75%;
+  max-height: 75%;
+  padding-left: 10px;
+}
+
+body {
+  color: whitesmoke;
+  background-color: #1d1d1d;
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #1b998b;
+}
+
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
+  transition: width 600ms ease;
+  overflow: auto;
+}
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-item:last-child {
+  margin-top: auto;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 5.5rem;
+  color: #00efd6;
+  text-decoration: none;
+  transition: var(--transition-speed);
+}
+
+.nav-link:hover {
+  filter: opacity(0.7);
+  color: var(--text-secondary);
+  animation: bounce;
+  animation-duration: 1s;
+}
+
+.link-text {
+  display: none;
+  margin-left: 1rem;
+}
+
+.nav-link svg {
+  width: 1.5rem;
+  min-width: 1.5rem;
+  margin: auto;
+}
+
+.fa-primary {
+  color: #2d3047;
+}
+
+.fa-secondary {
+  color: #1b998b;
+}
+
+.fa-primary,
+.fa-secondary {
+  transition: var(--transition-speed);
+}
+
+.logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+.logo img {
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+}
+
+.logo-text {
+  display: inline;
+  position: absolute;
+  left: -999px;
+  transition: var(--transition-speed);
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 3.75rem;
+    height: 100vh;
+  }
+}
