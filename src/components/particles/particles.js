@@ -1,9 +1,8 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-import Hometext from '../hometext/hometext';
 import './particle.css'
 
-export default function ParticlesDiv (props){
+export default function ParticlesDiv (){
     return (
         <div className="particles-js-canvas-el">
         <Particles 

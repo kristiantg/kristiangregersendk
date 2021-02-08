@@ -57,6 +57,14 @@ body::-webkit-scrollbar-thumb {
   margin-top: auto;
 }
 
+.nav-item:last-child .nav-link svg {
+  margin-top: auto;
+  color: whitesmoke;
+  width: 0.5rem;
+  height: 1rem;
+  margin: auto;
+}
+
 .nav-link {
   display: flex;
   align-items: center;

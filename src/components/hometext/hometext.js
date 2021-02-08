@@ -4,7 +4,6 @@ import './hometext.css'
 async function fadeIn(elements){
     let duration = 0.4;
     Array.from(elements).forEach(function(element) {
-        debugger;
         duration += 0.1;
         let durationdelay = duration.toString() + 's';
         element.style.setProperty('--animate-duration', durationdelay);

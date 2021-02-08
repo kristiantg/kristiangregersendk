@@ -1,0 +1,27 @@
+.cv {
+  margin-left: 10rem;
+  position: fixed;
+  font-family: monospace, monospace;
+  color: #fff;
+  width: 46%;
+  height: 80%;
+  max-width: 100%;
+  line-height: 1.5;
+  margin-top: 10rem;
+  border-radius: 0.5em;
+  bottom: 1rem;
+}
+
+.about_me_titlte {
+  font-size: 50px;
+  padding: 1rem;
+  padding-top: 10rem;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
