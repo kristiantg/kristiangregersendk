@@ -74,6 +74,15 @@ body::-webkit-scrollbar-thumb {
   transition: var(--transition-speed);
 }
 
+.is-active {
+  display: flex;
+  align-items: center;
+  height: 5.5rem;
+  text-decoration: none;
+  transition: var(--transition-speed);
+  color: var(--text-secondary);
+}
+
 .nav-link:hover {
   filter: opacity(0.7);
   color: var(--text-secondary);
