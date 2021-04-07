@@ -50,6 +50,7 @@ class Hometext extends Component {
                 <div className="bouncer">r</div>
                 <div className="bouncer">l</div>
                 <div className="bouncer">d</div>
+                <div className="bouncer">.</div>
                 <div className="break"></div>
                 <div className="bouncer">i</div>
                 <div className="bouncer">m</div>
@@ -62,6 +63,7 @@ class Hometext extends Component {
                 <div className="bouncer">i</div>
                 <div className="bouncer">a</div>
                 <div className="bouncer">n</div>
+                <div className="bouncer">,</div>
                 <div className="break"></div>
                 <div className="bouncer">s</div>
                 <div className="bouncer">o</div>
